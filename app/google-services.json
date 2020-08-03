@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "543689390036",
+    "firebase_url": "https://markaz-25931.firebaseio.com",
+    "project_id": "markaz-25931",
+    "storage_bucket": "markaz-25931.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543689390036:android:ec8ecc4c3979a9fae50841",
+        "android_client_info": {
+          "package_name": "com.ids.markaz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543689390036-n8mq5ae8633mut0j6qrds49mn2k9dsin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1nIoYjOYZWf4PSxguchR0Sn-nFy8g0Nw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543689390036-n8mq5ae8633mut0j6qrds49mn2k9dsin.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "543689390036-rc7vujiqp4d4gjtkm9501iup3p2n3t66.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.markaz.app",
+                "app_store_id": "1495806691"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

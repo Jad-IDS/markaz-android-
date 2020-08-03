@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/big_margin"
+        >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@drawable/bg_block_white_no_border"
+
+
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:id="@+id/linearMarkazRobot"
+            android:orientation="vertical"
+            >
+
+
+
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/ivInfo"
+                android:src="@drawable/img_01"
+                android:layout_gravity="center"
+
+
+                />
+
+        <com.ids.markaz.custom.CustomTextViewLiteRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/our_knowledge_power_your_assets"
+                android:textColor="@color/gray_text_dark"
+                android:textSize="@dimen/very_big_font"
+                android:id="@+id/tvInfoTitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+        <com.ids.markaz.custom.CustomTextViewLite
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/second_margin"
+                android:id="@+id/tvInfoDesc"
+                android:text="@string/award_winning_investment_services_since_1974"
+                android:textColor="@color/gray_text_dark"
+                android:textSize="@dimen/titles_font"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+    </LinearLayout>
+
+</LinearLayout>

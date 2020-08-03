@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/big_font"
+        >
+
+    <com.ids.markaz.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/big_margin"
+
+            android:paddingLeft="@dimen/big_margin"
+            android:id="@+id/tvPortfolioName"
+            android:paddingRight="@dimen/normal_margin"
+            android:textColor="@color/gold_text"
+            android:text="Portfolio 4435-D-MEQ-01"
+            android:paddingTop="@dimen/mini_margin"
+            android:paddingBottom="@dimen/mini_margin"
+            android:paddingEnd="@dimen/normal_margin"
+            android:background="@drawable/rectangular_gold"
+            />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            >
+
+
+
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/big_margin"
+
+                android:paddingLeft="@dimen/big_margin"
+                android:paddingRight="@dimen/big_margin"
+                android:id="@+id/tvStatus"
+                android:textColor="@color/tab_text_colo"
+                android:text="@string/active"
+                android:paddingTop="@dimen/mini_margin"
+                android:paddingBottom="@dimen/mini_margin"
+
+                android:background="@drawable/rectangular_bg_tabs"
+                />
+
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/second_margin"
+                android:layout_marginLeft="@dimen/second_margin"
+                />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/second_margin"
+            android:paddingRight="@dimen/second_margin"
+            >
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrice"
+                android:textColor="@color/black"
+                android:textSize="@dimen/titles_font"
+                android:layout_marginTop="@dimen/normal_margin"/>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/big_margin"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvPortfolioSub"
+                android:paddingRight="@dimen/second_margin"
+                android:paddingLeft="@dimen/second_margin"
+               android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginBottom="@dimen/big_margin"
+                />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

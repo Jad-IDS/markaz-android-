@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_start"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+
+
+        android:layout_height="match_parent">
+
+
+    <ImageView
+            android:layout_width="@dimen/logo_start_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/logo_white"
+    />
+
+    <com.ids.markaz.custom.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/big_font"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/white"
+            android:text="@string/please_select_your_language"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/big_margin_2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_margin="@dimen/normal_margin"
+                android:background="@drawable/bg_block_white"
+                android:id="@+id/linearEnglish"
+                android:orientation="vertical"
+        >
+
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/ivEnglishRadio"
+                        android:src="@drawable/circle_select"
+                        android:layout_gravity="center"
+                />
+
+
+
+
+            <com.ids.markaz.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_text_dark"
+                    android:textSize="@dimen/small_font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="English"
+                    android:layout_marginTop="@dimen/big_margin"
+            />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/big_font"
+                    android:text="Welcome"
+                    android:visibility="gone"
+                    android:id="@+id/tvEnglishText"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/linearArabic"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_margin="@dimen/normal_margin"
+                android:background="@drawable/bg_block_white"
+                android:orientation="vertical"
+        >
+
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/circle_unselect"
+
+
+                        android:id="@+id/ivArabicRadio"
+                        android:layout_gravity="center"
+                />
+
+
+            <com.ids.markaz.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_text_dark"
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:textSize="@dimen/small_font"
+                    android:text="عربي"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+            />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary"
+                    android:textSize="@dimen/big_font"
+                    android:text="أهلا بك"
+                    android:visibility="gone"
+                    android:id="@+id/tvArabicText"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_marginEnd="15dp"
+
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+
+            android:layout_gravity="center"
+            android:id="@+id/linearOk"
+            android:gravity="center"
+            android:background="@drawable/rounded_corner_primary"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+    >
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font"
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

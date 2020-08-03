@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="@dimen/toolbar_general_height">
+
+
+
+        <com.ids.markaz.custom.CustomTextViewLiteRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/big_font"
+
+                android:layout_marginTop="-10dp"
+                android:id="@+id/tvWelcome"
+                android:text="@string/welcome_mr"
+
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+
+        <com.ids.markaz.custom.CustomTextViewLite
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_font"
+                android:id="@+id/tvAccountLastLogin"
+                android:text="Account 4435 | Last login: 12 Feb 2020"
+
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                />
+
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45"
+            app:cardElevation="2dp"
+            android:visibility="gone"
+            app:cardUseCompatPadding="true"
+            android:padding="@dimen/normal_margin"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/second_margin"
+            app:cardCornerRadius="5dp"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/second_margin"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="@dimen/second_margin"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_user"
+                   />
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_normal"
+                    android:textSize="@dimen/small_font"
+                    android:text="@string/have_you_tried_smart_advisor"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginStart="@dimen/normal_margin"/>
+
+
+
+
+
+            <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/second_margin"
+                    android:layout_marginLeft="@dimen/second_margin"
+                    />
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

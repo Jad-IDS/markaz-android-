@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_start"
+        >
+
+
+    <LinearLayout
+            android:layout_marginTop="@dimen/title_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        <ImageView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/logo_white"
+                />
+
+
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/choose_user"
+                android:textSize="@dimen/big_font"
+            />
+
+
+
+
+        <LinearLayout
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/big_margin"
+                android:layout_marginRight="@dimen/big_margin"
+                android:background="@drawable/background_rectangular_white"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/second_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/toolbar_margin"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:id="@+id/rvUsers"/>
+
+        <Spinner
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/spCurrencies"/>
+
+
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_marginTop="@dimen/toolbar_margin"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:gravity="center"
+                android:paddingLeft="@dimen/mini_margin"
+                android:paddingRight="@dimen/mini_margin"
+                android:id="@+id/btEnter"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:background="@drawable/rounded_corner_primary"
+                android:text="@string/continue_1"
+                android:textSize="@dimen/font"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

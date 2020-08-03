@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_start"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+
+        android:layout_height="match_parent">
+
+
+    <ImageView
+            android:layout_width="@dimen/logo_start_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo_white"
+    />
+
+    <com.ids.markaz.custom.CustomTextViewMedium
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What brings you here today?"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/big_margin"
+            android:textSize="@dimen/font"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+                android:layout_width="@dimen/block_width"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_block_white"
+                android:layout_marginTop="@dimen/big_margin"
+                android:id="@+id/linearMarkazWealth"
+                android:orientation="vertical"
+                >
+
+
+
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ivmarkazWealthLogo"
+                    android:src="@drawable/logo_wealth"
+                    android:layout_gravity="center"
+
+
+                    />
+
+            <com.ids.markaz.custom.CustomTextViewLite
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/markaz_wealth"
+                    android:textColor="@color/gray_text_dark"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+
+            <com.ids.markaz.custom.CustomTextViewLite
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/for_exesting_investments"
+                    android:textColor="@color/gray_text_light"
+                    android:textSize="@dimen/font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="@dimen/block_width"
+                android:layout_height="160dp"
+                android:background="@drawable/bg_block_white"
+                android:layout_marginTop="40dp"
+                android:id="@+id/linearMarkazRobot"
+                android:orientation="vertical"
+                >
+
+
+
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ivMarkazRobotLogo"
+                    android:src="@drawable/logo_robot"
+                    android:layout_gravity="center"
+
+
+                    />
+
+            <com.ids.markaz.custom.CustomTextViewLite
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/markaz_robot"
+                    android:textColor="@color/gray_text_dark"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+
+            <com.ids.markaz.custom.CustomTextViewLite
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/for_new_investments"
+                    android:textColor="@color/gray_text_light"
+                    android:textSize="@dimen/font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:id="@+id/tabPerformance"
+android:visibility="gone"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_margin"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btYs"
+                android:orientation="vertical">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:id="@+id/tvYsTitle"
+                    android:text="@string/yesterday"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_text_light"/>
+            <com.ids.markaz.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tvYesterdayPercentage"
+                    android:layout_marginTop="@dimen/mini_margin"
+                    android:text="2.09%"
+                    android:textColor="@color/gray_text_light"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btMtd"
+                android:orientation="vertical">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:id="@+id/tvMtdTitle"
+                    android:text="@string/month_to_date"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_text_light"/>
+            <com.ids.markaz.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:layout_gravity="center"
+                    android:id="@+id/tvMonthToDatePercentage"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/mini_margin"
+                    android:text="2.09%"
+                    android:textColor="@color/gray_text_light"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btYtd"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:id="@+id/tvYtdTitle"
+                    android:text="@string/year_to_date"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_text_light"/>
+            <com.ids.markaz.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tvYearToDatePercentage"
+                    android:layout_marginTop="@dimen/mini_margin"
+                    android:textColor="@color/gray_text_light"/>
+
+        </LinearLayout>
+    </LinearLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+    <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="@dimen/second_margin"
+            android:id="@+id/lineChart"
+            />
+
+    <com.ids.markaz.custom.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tvNoDataLineChart"
+            android:visibility="gone"
+            android:text=""
+            />
+
+</RelativeLayout>
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <com.github.mikephil.charting.charts.BarChart
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/barChart"
+            android:layout_marginTop="@dimen/normal_margin"
+            />
+    <com.ids.markaz.custom.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/tvNoDataBarChart"
+            android:visibility="gone"
+            android:text=""
+            />
+</RelativeLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btTopHolding"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+               android:textColor="@color/tab_text_colo"
+                android:text="@string/view_top_5_holdings"
+
+                />
+
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginStart="@dimen/second_margin"
+                />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

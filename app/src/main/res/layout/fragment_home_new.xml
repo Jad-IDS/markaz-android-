@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layoutDirection="locale"
+        >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            <include layout="@layout/toolbar_home_page"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_white_frame"
+
+
+                    android:paddingBottom="@dimen/big_margin"
+
+                    android:layout_marginTop="@dimen/layout_elevation"
+                    android:orientation="vertical">
+            <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/big_margin"
+                    >
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_home_frame"
+                    android:orientation="vertical">
+
+
+
+
+
+                <com.ids.markaz.custom.CustomTextViewMedium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_text_dark"
+                        android:textSize="@dimen/font"
+
+                        android:text="@string/total_account_value"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/small_margin"
+                        >
+                    <com.ids.markaz.custom.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/big_font"
+                            android:id="@+id/tvTotalPortfolioValue"
+                            />
+
+
+                    <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:tint="@color/green"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:id="@+id/ivPortfolioPercentageArrow"
+                            android:src="@drawable/ic_increase_arrow"/>
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/too_small_font"
+                            android:textColor="@color/green"
+                            android:text="0%"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:id="@+id/tvPortfolioPercentage"
+                            />
+
+
+
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray_text_light"
+                            android:textSize="@dimen/font"
+                            android:id="@+id/tvPortfolioName"
+                            android:layout_marginLeft="@dimen/big_margin"
+                            android:layout_marginStart="@dimen/big_margin"
+
+                            android:text=""/>
+
+
+                    <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:tint="@color/red"
+                            android:rotationX="180"
+
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/ic_increase_arrow"/>
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/too_small_font"
+                            android:textColor="@color/red"
+                            android:text="0%"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:id="@+id/tvDecreasePercentage"
+                            />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/home_tab_height"
+                        android:layout_marginTop="@dimen/second_margin"
+                        android:background="@drawable/rectangular_bg_tabs"
+                        android:orientation="horizontal">
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:textSize="@dimen/font"
+                            android:textColor="@color/white"
+                            android:id="@+id/btTabOverview"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/overview"
+                            android:background="@drawable/background_rectangular_primary"
+                            android:layout_height="match_parent"/>
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/btTabPerformance"
+                            android:layout_margin="1dp"
+                            android:text="@string/performance"
+                            android:textSize="@dimen/font"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/tab_text_colo"
+                            android:layout_height="match_parent"/>
+
+                    <com.ids.markaz.custom.CustomTextViewMedium
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1dp"
+                            android:id="@+id/btTabAllocation"
+                            android:text="@string/allocation"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/tab_text_colo"
+                            android:textSize="@dimen/font"
+                            android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+
+                <include layout="@layout/home_tab_overview"/>
+                <include layout="@layout/home_tab_performance"/>
+                <include layout="@layout/home_tab_allocation"/>
+
+
+
+
+            </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

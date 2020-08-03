@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+
+<LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="@dimen/mini_margin"
+            android:layout_marginLeft="@dimen/mini_margin"
+
+            android:src="@drawable/portfolio_icon"
+            android:layout_gravity="center"
+            />
+    <com.ids.markaz.custom.CustomTextViewMedium
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:id="@+id/tvGainEquity"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin"
+            android:text="@string/equities"
+            android:textColor="@color/separator_secondary"
+            android:textSize="@dimen/too_small_font" />
+
+</LinearLayout>
+<LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+       android:background="@color/gray_shadow"/>
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:id="@+id/tvGainAvgCost"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/too_small_font" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_shadow" />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:id="@+id/tvGainTotalCost"
+                    android:paddingRight="@dimen/small_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/too_small_font" />
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_shadow" />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:id="@+id/tvGainPercentage"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/too_small_font" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+           android:background="@color/gray_shadow"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                <com.ids.markaz.custom.CustomTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/mini_margin"
+                        android:layout_marginLeft="@dimen/mini_margin"
+                        android:text="@string/qnt"
+                        android:textColor="@color/primary"
+                        android:layout_gravity="center"
+                        />
+                <com.ids.markaz.custom.CustomTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvGainQty"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:paddingRight="@dimen/small_margin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/too_small_font" />
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_shadow"/>
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:id="@+id/tvGainLastPrice"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/too_small_font" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_shadow" />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:id="@+id/tvGainTotalValue"
+                    android:paddingRight="@dimen/small_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/too_small_font" />
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_shadow" />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:id="@+id/tvGainQtyPercentage"
+                    android:paddingRight="@dimen/small_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/too_small_font" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_shadow"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_height"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1.5">
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+
+                <com.ids.markaz.custom.CustomTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                         android:id="@+id/tvGainLossTitle"
+                        android:paddingLeft="@dimen/small_margin"
+                        android:paddingRight="@dimen/small_margin"
+                        android:text="@string/gain_loss"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/too_small_font" />
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_shadow"/>
+
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:id="@+id/tvGainLossAvgCost"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/too_small_font" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_shadow" />
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:id="@+id/tvGainLossTotalValue"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/too_small_font" />
+            <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_shadow" />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/small_margin"
+                    android:paddingRight="@dimen/small_margin"
+                    android:id="@+id/tvGainLossPercentage"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/too_small_font" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_shadow"/>
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondary">
+
+
+
+
+    <include layout="@layout/toolbar_general"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_elevation"
+            android:background="@drawable/rounded_white_frame"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                     <!--   <ImageView
+                                android:id="@+id/ivUser"
+                                android:layout_width="@dimen/image_dimensions"
+                                android:layout_height="@dimen/image_dimensions"
+                                android:src="@drawable/img_robot">-->
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/ivUser"
+                                    android:layout_width="@dimen/image_dimensions"
+                                    android:layout_height="@dimen/image_dimensions"
+                                    android:src="@drawable/img_robot"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@color/primary"/>
+
+
+
+
+                        <com.ids.markaz.custom.CustomTextViewLiteRegular
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/big_margin"
+                                android:text="Kiandra Mohsen"
+                                android:textSize="@dimen/font" />
+
+
+                        <LinearLayout
+                                android:id="@+id/btProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/table_row_height"
+                                android:layout_marginLeft="@dimen/second_margin"
+                                android:layout_marginTop="@dimen/second_margin"
+                                android:layout_marginRight="@dimen/second_margin"
+                                android:background="@drawable/rectangular_white"
+                                android:gravity="center_vertical">
+
+                            <com.ids.markaz.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/big_margin"
+                                    android:paddingLeft="@dimen/big_margin"
+                                    android:text="@string/profile"
+                                    android:textColor="@color/gray_text_dark"
+                                    android:textSize="@dimen/big_font" />
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:paddingRight="@dimen/big_margin"
+                                    android:paddingEnd="@dimen/big_margin"
+                                    >
+
+                                <ImageView
+
+                                        android:layout_width="@dimen/to_button"
+                                        android:layout_height="@dimen/to_button"
+                                        android:src="@drawable/arrow" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:id="@+id/btNotifications"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/table_row_height"
+                                android:layout_marginLeft="@dimen/second_margin"
+                                android:layout_marginTop="@dimen/second_margin"
+                                android:layout_marginRight="@dimen/second_margin"
+                                android:background="@drawable/rectangular_white"
+                                android:gravity="center_vertical">
+
+
+                            <com.ids.markaz.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/big_margin"
+                                    android:paddingStart="@dimen/big_margin"
+                                    android:text="@string/notifications"
+                                    android:textColor="@color/gray_text_dark"
+                                    android:textSize="@dimen/big_font" />
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:paddingRight="@dimen/big_margin"
+                                    android:paddingEnd="@dimen/big_margin"
+                                    >
+
+                                <ImageView
+
+                                        android:layout_width="@dimen/to_button"
+                                        android:layout_height="@dimen/to_button"
+                                        android:src="@drawable/arrow" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:id="@+id/btSecurity"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/table_row_height"
+                                android:layout_marginLeft="@dimen/second_margin"
+                                android:layout_marginTop="@dimen/second_margin"
+                                android:layout_marginRight="@dimen/second_margin"
+                                android:background="@drawable/rectangular_white"
+                                android:gravity="center_vertical">
+
+
+                            <com.ids.markaz.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/big_margin"
+                                    android:paddingLeft="@dimen/big_margin"
+                                    android:text="@string/security"
+                                    android:textColor="@color/gray_text_dark"
+                                    android:textSize="@dimen/big_font" />
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:paddingRight="@dimen/big_margin"
+                                    android:paddingEnd="@dimen/big_margin"
+                                    >
+
+                                <ImageView
+
+                                        android:layout_width="@dimen/to_button"
+                                        android:layout_height="@dimen/to_button"
+                                        android:src="@drawable/arrow" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:id="@+id/btLanguage"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/table_row_height"
+                                android:layout_marginLeft="@dimen/second_margin"
+                                android:layout_marginTop="@dimen/second_margin"
+                                android:layout_marginRight="@dimen/second_margin"
+                                android:background="@drawable/rectangular_white"
+                                android:gravity="center_vertical">
+
+
+                            <com.ids.markaz.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/big_margin"
+                                    android:paddingLeft="@dimen/big_margin"
+                                    android:text="@string/language"
+                                    android:textColor="@color/gray_text_dark"
+                                    android:textSize="@dimen/big_font" />
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:paddingRight="@dimen/big_margin"
+                                    android:paddingEnd="@dimen/big_margin"
+                                    >
+
+                                <ImageView
+
+                                        android:layout_width="@dimen/to_button"
+                                        android:layout_height="@dimen/to_button"
+                                        android:src="@drawable/arrow" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:id="@+id/btCurrency"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/table_row_height"
+                                android:layout_marginLeft="@dimen/second_margin"
+                                android:layout_marginTop="@dimen/second_margin"
+                                android:layout_marginRight="@dimen/second_margin"
+                                android:background="@drawable/rectangular_white"
+                                android:gravity="center_vertical">
+
+
+                            <com.ids.markaz.custom.CustomTextViewMedium
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/big_margin"
+                                    android:paddingLeft="@dimen/big_margin"
+                                    android:text="@string/currency"
+                                    android:textColor="@color/gray_text_dark"
+                                    android:textSize="@dimen/big_font" />
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:paddingRight="@dimen/big_margin"
+                                    android:paddingEnd="@dimen/big_margin"
+                                    >
+
+                               <Spinner
+                                       android:layout_width="wrap_content"
+                                       android:paddingLeft="@dimen/second_margin"
+                                       android:paddingRight="@dimen/second_margin"
+                                       android:layout_height="wrap_content"
+                                       android:id="@+id/spCurrencies"
+                                       />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/loading_trans" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+

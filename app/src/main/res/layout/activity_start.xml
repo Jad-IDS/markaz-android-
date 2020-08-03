@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_start"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.ids.markaz.custom.CustomTextViewMedium
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Coming Soon"
+        android:textSize="@dimen/big_font"
+        />
+
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+
+    <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:id="@+id/vpStart"
+            />
+
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tlImage"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/big_margin"
+
+
+            android:layout_gravity="center_horizontal"
+            app:tabBackground="@drawable/selector_tab_image"
+            app:tabGravity="center"
+            app:tabPadding="4dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="15dp"
+            app:tabRippleColor="@null" />
+</LinearLayout>
+
+    <com.ids.markaz.custom.CustomTextViewMedium
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/bt_skip_bg"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/btn_skip_text_color"
+            android:textSize="@dimen/font"
+            android:onClick="skip"
+            android:layout_marginBottom="30dp"
+            android:text="@string/skip"
+            android:id="@+id/btSkip"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingRight="@dimen/normal_margin"
+        android:paddingLeft="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+
+        >
+
+    <com.ids.markaz.custom.CustomTextViewMedium
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Position"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_gravity="center_vertical"
+            android:textDirection="locale"
+            android:gravity="start"
+        android:textSize="@dimen/font"
+        android:textColor="@color/gray_text_dark"
+        android:id="@+id/tvName"/>
+
+    <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivSelected"
+        android:src="@drawable/circle_unselect"
+            android:layout_gravity="center_vertical"
+            />
+
+</LinearLayout>

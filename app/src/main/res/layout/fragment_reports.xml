@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/loading"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <include layout="@layout/toolbar_general"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_white_frame"
+
+                android:paddingTop="@dimen/big_margin"
+                android:paddingBottom="@dimen/big_margin"
+
+                android:layout_marginTop="@dimen/layout_elevation"
+                android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/second_margin"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font"
+                    android:layout_marginRight="@dimen/second_margin"
+                    android:layout_marginEnd="@dimen/second_margin"
+                    android:text="@string/from"
+                    />
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/second_margin"
+                    android:layout_marginStart="@dimen/second_margin"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font"
+                    android:text="@string/to"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="horizontal">
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/second_margin"
+                    android:layout_marginEnd="@dimen/second_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                <com.ids.markaz.custom.CustomTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_text_light"
+                        android:id="@+id/tvDateFrom"
+
+                        android:textSize="@dimen/font"
+                        android:hint="@string/dd_mm_yyyy"
+                        />
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/ivCLoseFrom"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_close"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/second_margin"
+                    android:layout_marginStart="@dimen/second_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1">
+                <com.ids.markaz.custom.CustomTextViewMedium
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_text_light"
+                        android:id="@+id/tvDateTo"
+
+                        android:textSize="@dimen/font"
+                        android:hint="@string/dd_mm_yyyy"
+                        />
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:visibility="gone"
+                        android:id="@+id/ivCLoseTo"
+                        android:src="@drawable/ic_close"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:orientation="horizontal">
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_separator"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/second_margin"
+                    android:layout_marginEnd="@dimen/second_margin"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/second_margin"
+                    android:layout_marginStart="@dimen/second_margin"
+                    android:background="@color/gray_separator"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"/>
+
+
+
+
+        </LinearLayout>
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/second_margin"
+                android:text="@string/you_can_only_get_reports_from_04_05_2020"
+                android:textSize="@dimen/font"
+                android:textColor="@color/red"/>
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_font"
+                android:text="@string/report_format"
+                android:layout_marginTop="@dimen/big_margin"
+                />
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/big_margin"
+
+                >
+            <!--  android:background="@drawable/background_rectangular_gray"-->
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:layout_marginLeft="@dimen/mini_margin"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/primary"
+                    />
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    android:textSize="@dimen/font"
+                    android:id="@+id/spReportType"
+
+                    />
+
+        </RelativeLayout>
+
+
+
+
+ <!--       <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_font"
+                android:text="@string/portfolio"
+                android:layout_marginTop="@dimen/big_margin"
+                />
+
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/big_margin"
+
+                >
+            &lt;!&ndash;  android:background="@drawable/background_rectangular_gray"&ndash;&gt;
+
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/mini_margin"
+                    android:layout_marginLeft="@dimen/mini_margin"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/primary"
+                    />
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    android:textSize="@dimen/font"
+                    android:id="@+id/spPortfolioReport"
+
+                    />
+
+        </RelativeLayout>-->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/second_margin"
+                android:background="@color/gray_separator"/>
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_font"
+                android:text="@string/select_report"
+                android:layout_marginTop="@dimen/big_margin"
+                />
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:id="@+id/rvReportTypes"
+            android:layout_marginTop="@dimen/second_margin"
+            />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/second_margin"
+            android:layout_marginLeft="@dimen/second_margin"
+            android:layout_marginBottom="@dimen/second_margin"
+            android:orientation="horizontal">
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:id="@+id/btView"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="@drawable/rounded_corner_primary"
+                android:gravity="center"
+                android:text="@string/view"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font" />
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/rounded_corner_primary"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/email"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+                />
+    </LinearLayout>
+</LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

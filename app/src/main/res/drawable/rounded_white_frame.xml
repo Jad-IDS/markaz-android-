@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners
+                    android:topRightRadius="@dimen/card_corner_radius"
+                    android:topLeftRadius="@dimen/card_corner_radius"  />
+
+            <stroke android:width="1dip" android:color="@color/gray_block" />
+            <gradient android:angle="-90" android:startColor="@color/gray_block"
+                    android:endColor="@color/gray_block"  />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle"  >
+            <corners
+                    android:topRightRadius="@dimen/card_corner_radius"
+                    android:topLeftRadius="@dimen/card_corner_radius"
+                    />
+            <stroke android:width="1dip" android:color="@color/gray_block" />
+            <solid android:color="@color/gray_block"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners
+                    android:topRightRadius="@dimen/card_corner_radius"
+                    android:topLeftRadius="@dimen/card_corner_radius"
+                    />
+            <stroke android:width="1dip" android:color="@color/gray_block" />
+            <gradient android:angle="-90" android:startColor="@color/gray_block" android:endColor="@color/gray_block" />
+        </shape>
+    </item>
+</selector>

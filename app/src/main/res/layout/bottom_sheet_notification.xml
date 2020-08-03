@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+
+        <LinearLayout
+                android:background="@drawable/rounded_white_frame"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+        <LinearLayout
+                android:layout_marginTop="@dimen/big_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="@dimen/toolbar_icon"
+                    android:layout_height="@dimen/fragment_image"
+                    android:src="@drawable/not"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+                android:layout_marginTop="@dimen/second_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.ids.markaz.custom.CustomTextViewBold
+                    android:textSize="@dimen/big_font"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/KYC_expire"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_marginTop="@dimen/big_margin"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/big_margin"
+                android:layout_marginLeft="@dimen/big_margin">
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:layout_width="@dimen/text_view_size_info"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_message"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/big_margin"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/big_margin"
+                android:id="@+id/btLogin"
+                >
+
+            <com.ids.markaz.custom.CustomTextViewBold
+                    android:background="@drawable/rounded_main"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/action"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:textSize="@dimen/font"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

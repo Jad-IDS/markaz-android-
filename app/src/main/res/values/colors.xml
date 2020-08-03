@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#199fd9</color>
+    <!--    #47b7f5&lt;!&ndash;&ndash;&gt;-->
+    <color name="colorPrimaryDark">#199fd9</color>
+    <color name="colorAccent">#199fd9</color>
+
+    <color name="primary">#00599B</color>
+    <color name="secondary">#199fd9</color>
+    <color name="blue1">#199fd9</color>
+    <color name="footer">#65a8df</color>
+
+
+    <color name="toolbar_color">#1aa0d9</color>
+
+
+    <color name="home_tab_bg">#ebf6ff</color>
+    <color name="tab_text_colo">#29a9e0</color>
+
+    <color name="text_blue_normal">#85bae6</color>
+
+
+    <color name="white">#ffffff </color>
+    <color name="bg_white">#fafafa</color>
+
+    <color name="white_trans">#99ffffff </color>
+    <color name="black">#000000 </color>
+    <color name="gray_dark">#656565 </color>
+    <color name="gray_light">#eeeeee </color>
+    <color name="gray_shadow">#cecece</color>
+
+    <color name="gray_block">#fbfbfb</color>
+    <color name="gray_block_border">#f5f5f5</color>
+
+    <color name="gray_separator">#e6e6e6</color>
+
+    <color name="gray_tabs">#858688</color>
+
+
+    <color name="transparent">#00000000 </color>
+    <color name="gray_text_dark">#424242</color>
+    <color name="gray_text_light">#969699</color>
+    <color name="blue">#4a90e2</color>
+
+    <color name="red">#fe849a</color>
+
+    <color name="separator_secondary">#9947b7f5</color>
+
+    <color name="table_odd">#f8f9fb</color>
+
+    <color name="green">#7ccfa6</color>
+
+    <color name="green_light">#e7f4e7</color>
+    <color name="green_text">#41c140</color>
+
+
+    <color name="blacktrans">#44000000</color>
+
+    <color name="gray_medium">#efefef </color>
+
+    <color name="tab_unselected">#3e99cb </color>
+
+    <color name="btn_skip_border">#3e99cb </color>
+    <color name="btn_skip_color">#076bac </color>
+    <color name="btn_skip_text_color">#b5d3e6 </color>
+    <color name="footer_icon_tint">#d1e5f5 </color>
+
+    <color name="red_bg_light">#f8eef0 </color>
+    <color name="red_text_light">#e48196 </color>
+
+    <color name="gold_text">#cbb565 </color>
+    <color name="gold_light_bg">#f9f7ef </color>
+
+
+</resources>

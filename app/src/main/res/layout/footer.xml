@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/footer"
+        android:id="@+id/linearFooter"
+        android:orientation="horizontal"
+       android:gravity="center_horizontal">
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/second_margin"
+                  android:id="@+id/btTabPortfolio"
+
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:id="@+id/ivPortfolio"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:tint="@color/footer_icon_tint"
+                android:gravity="center"
+                android:src="@drawable/tab_portfolio"
+        />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textSize="@dimen/small_font"
+                android:textColor="@color/btn_skip_text_color"
+                android:text="@string/portfolio"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:layout_gravity="center_horizontal"
+                  android:gravity="center_horizontal"
+                  android:paddingTop="@dimen/second_margin"
+                  android:id="@+id/btTabActivity"
+
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:id="@+id/ivActivity"
+                android:tint="@color/footer_icon_tint"
+                android:src="@drawable/tab_activity"
+
+        />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textSize="@dimen/small_font"
+                android:textColor="@color/btn_skip_text_color"
+                android:text="@string/activity"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/second_margin"
+                  android:orientation="vertical"
+                  android:id="@+id/btTabHome"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:tint="@color/footer_icon_tint"
+                android:id="@+id/ivFooterElearning"
+                android:src="@drawable/tab_home"
+        />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textSize="@dimen/small_font"
+                android:textColor="@color/btn_skip_text_color"
+                android:text="@string/home"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/second_margin"
+                  android:id="@+id/btTabReports"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:tint="@color/footer_icon_tint"
+                android:id="@+id/ivReports"
+                android:src="@drawable/tab_reports"
+
+        />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textSize="@dimen/small_font"
+                android:textColor="@color/btn_skip_text_color"
+                android:text="@string/reports"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/second_margin"
+            android:id="@+id/btTabMore"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="@dimen/tab_icon_width_height"
+                android:layout_height="@dimen/tab_icon_width_height"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:tint="@color/footer_icon_tint"
+                android:id="@+id/ivMore"
+                android:src="@drawable/tab_more"
+
+                />
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:textSize="@dimen/small_font"
+                android:textColor="@color/btn_skip_text_color"
+                android:text="@string/more"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

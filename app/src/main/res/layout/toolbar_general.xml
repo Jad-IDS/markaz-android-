@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:layout_gravity="center"
+
+
+        android:layout_height="@dimen/toolbar_general_height">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="-10dp"
+             android:orientation="horizontal">
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                android:tint="@color/white"
+                android:id="@+id/btBack"
+                android:visibility="invisible"
+                android:src="@drawable/back_icon_0"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+                    android:id="@+id/tvToolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/big_font" />
+
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@color/transparent"
+                    android:id="@+id/spPortfolio"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginRight="@dimen/second_margin"
+                />
+
+    </LinearLayout>
+
+
+</LinearLayout>

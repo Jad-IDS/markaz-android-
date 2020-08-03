@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:id="@+id/linearHoldings"
+        android:layout_height="50dp">
+    <com.ids.markaz.custom.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvTopTitle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/font"
+            android:textColor="@color/gray_text_dark"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:layout_gravity="center_vertical"
+                android:textDirection="locale"
+                android:gravity="start"
+                android:textSize="@dimen/font"
+                android:textColor="@color/gray_text_dark"/>
+
+        <com.ids.markaz.custom.CustomTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrice"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/font"
+               android:textColor="@color/black"/>
+
+
+        <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_increase_arrow"
+                android:id="@+id/ivUpDown"
+                android:layout_marginLeft="@dimen/mini_margin"
+                android:layout_marginRight="@dimen/mini_margin"
+                android:tint="@color/green_text"/>
+
+
+        <com.ids.markaz.custom.CustomTextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPercentage"
+
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/font"
+                android:textColor="@color/green_text"/>
+
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/second_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_marginEnd="@dimen/second_margin"
+                />
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_separator"/>
+
+</LinearLayout>
